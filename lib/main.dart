@@ -27,7 +27,7 @@ void main() {
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.black,
-                fontWeight: FontWeight.w800,
+                fontWeight: FontWeight.w600,
               ),
             ),
           ),
