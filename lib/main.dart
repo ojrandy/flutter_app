@@ -23,7 +23,7 @@ void main() {
           ),
           child: const Center(
             child: Text(
-              'Welcome to the Barbers Shop',
+              'Welcome to the Barbers',
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.black,
