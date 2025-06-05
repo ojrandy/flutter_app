@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text('Barbers Shop', style: TextStyle(fontSize: 20)),
@@ -27,7 +28,7 @@ class GradientContainer extends StatelessWidget {
           colors: [
             Colors.blue,
             const Color.fromARGB(193, 11, 7, 219),
-            Color.fromARGB(255, 5, 182, 129),
+            Color.fromARGB(255, 2, 151, 106),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -44,5 +45,14 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class ExtentTextGradient extends StatelessWidget {
+  const ExtentTextGradient({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ExtentTextGradient();
   }
 }
