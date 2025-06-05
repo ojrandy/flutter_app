@@ -4,7 +4,9 @@ import '../style_text.dart';
 
 // Creates a class to store the container Widgets
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer({super.key, required this.colors});
+
+  final List<Color> colors;
 
   @override
   Widget build(BuildContext context) {
@@ -12,16 +14,12 @@ class GradientContainer extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           // Define a linear gradient with three colors
-          colors: [
-            Colors.blue,
-            const Color.fromARGB(193, 11, 7, 219),
-            Color.fromARGB(255, 2, 151, 106),
-          ],
-          begin: Alignment.topLeft,
+          colors: colors,
+          begin: Alignment.topCenter,
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Center(child: StyleText()),
+      child: const Center(child: StyleText(text: "Hello, Barber!")),
     );
   }
 }
