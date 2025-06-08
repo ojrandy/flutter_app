@@ -8,7 +8,8 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Barbers Shop', style: TextStyle(fontSize: 20)),
+          centerTitle: true,
+          title: Text('Roll Dice', style: TextStyle(fontSize: 20)),
           backgroundColor: Colors.blueAccent,
         ),
         body: GradientContainer(
